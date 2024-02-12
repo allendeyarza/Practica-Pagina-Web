@@ -1,4 +1,4 @@
-#Bienvenido a Mi Página Web de Moda!
+# Bienvenido a Mi Página Web de Moda!
 
 He creado este sitio web porque tengo una gran afición por la moda y quiero compartir mi entusiasmo por las Fashion Weeks que se están llevando a cabo o que están por venir. Aquí encontrarás información actualizada sobre las semanas de la moda más importantes, destacando algunos de los diseñadores y marcas que están en el candelero.
 
