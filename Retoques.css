@@ -1,0 +1,95 @@
+body, html { /*editamos el body de mi html Base*/
+    margin: 0;/* márgenes con el resto de objetos*/
+    padding: 0;/* es el márgen interno de mi objeto*/
+    height: 100vh; /* Full viewport height */
+    background-image: url('https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_3097,w_5504,x_540,y_493/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1664635321/221001-bella-hadid-paris-fashion-hero_iq2o2h');/*ponemos la imagen como fondo*/
+    background-position: center; /*centramos la imagen horizontalmente en el fondo*/
+    background-size: cover; /*para que cubra toda el área posible sin distorsión*/
+    background-attachment: fixed; /* fija que quiere decir que no se va moviendo mientras me desplazo*/
+}
+
+.sidebar {
+    height: 100vh; /* 100% de la altura del viewport*/
+    width: 20%; /* Que mi sidebar sea un 20% de la pantalla */
+    position: fixed; /*posición fija de mi barra lateral*/
+    z-index: 1; /*apilamiento en la página, para decir que está por delante del fondo (foto de fondo)*/
+    top: 0; /*esquina superior izquierda*/
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Le damos opacidad */
+    overflow-x: hidden; /* Barra para bajar hacia abajo solo aparece cuando la uso*/
+    padding-top: 20px;
+}
+
+.sidebar h2, .sidebar-section h2 { /*seleccionamos elementos h2 dentro de mi clase sidebar*/
+    color: white;
+    padding: 6px 16px;
+    font-size: 3rem; 
+    margin-bottom: 0.5rem; /* Encabezado y siguiente elemento */
+}
+
+.sidebar a, .sidebar-section a {
+    padding: 6px 16px;
+    text-decoration: none;
+    font-size: 2rem; 
+    color: white;
+    display: block; 
+    margin-bottom: 0.5rem; 
+}
+
+.sidebar a:hover, .sidebar-section a:hover {
+    background-color: #575757; /* Estado hover para mis enlaces */
+}
+.coming-soon { 
+    color: #fff; 
+    padding: 6px 16px;
+    font-size: 2rem; 
+    font-style: italic; 
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; /*Modificaciones para pantallas mas pequeñas*/
+        padding-top: 60px; 
+    }
+
+    .sidebar h2, .sidebar-section h2,
+    .sidebar a, .sidebar-section a {
+        font-size: 6vw; /* Responsividad para pantallas más pequeñas*/
+    }
+}
+.email-subscribe {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro y semitransparente */
+    z-index: 2; /* El que más por delante en el eje z*/
+}
+
+.email-subscribe form {
+    display: flex; /*Diseño felxbox al formulario*/
+    align-items: center;
+}
+
+.email-subscribe input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid #555; 
+    background-color: #222; 
+    color: #ddd; 
+    border-radius: 4px;
+}
+
+.email-subscribe button {
+    padding: 10px 20px;
+    background-color: #333; 
+    color: #fff; 
+    border: none;
+    border-radius: 4px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.email-subscribe button:hover {
+    background-color: #444; 
+}
